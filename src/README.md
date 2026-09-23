@@ -30,3 +30,13 @@ Numero --> Funciona
 
 ## Eror:
 Basicamente no me dejaba volver hacia atras, es decir al seleccionar la opción 1 no me dejaba volver a elejir entre las opciones, hasta que hice el bucle while(true) con los breaks para que rompiese el case y no finalizase el bucle. Basicamente se soluciono añadiendo el bucle.
+
+
+#Nivel 3
+
+Prueba de errores:
+![img_9.png](img_9.png)
+![img_10.png](img_10.png)
+
+![img_11.png](img_11.png)
+![img_12.png](img_12.png)

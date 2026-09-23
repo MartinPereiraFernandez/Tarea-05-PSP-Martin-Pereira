@@ -11,7 +11,7 @@ public class Main{
             int entrada = scanner.nextInt();
             switch (entrada) {
                 case 1: {
-                    Interfaz interfaz = new Interfaz();
+                    Interfaz interfaz = new Interfaz(1);
                     interfaz.iniciar();
                     break;
                 }
@@ -21,6 +21,8 @@ public class Main{
                 }
 
                 case 3: {
+                    Interfaz interfaz = new Interfaz(3);
+                    interfaz.iniciar();
                     break;
                 }
 
