@@ -6,17 +6,13 @@ public class Main{
 
         menu:
         while (true) {
-            System.out.println("¿Que nivel quieres usar? (1,2,3 o 4) - Para salir usa otro número");
+            System.out.println("¿Que nivel quieres usar? (1,3 o 4) - Para salir usa otro número");
             System.out.print("> "); //En vez de println se usa un un print para que el scanner se haga en esa linea en vez de la de abajo.
             int entrada = scanner.nextInt();
             switch (entrada) {
                 case 1: {
                     Interfaz interfaz = new Interfaz(1);
                     interfaz.iniciar();
-                    break;
-                }
-
-                case 2: {
                     break;
                 }
 
@@ -27,6 +23,8 @@ public class Main{
                 }
 
                 case 4: {
+                    Interfaz interfaz = new Interfaz (4);
+                    interfaz.iniciar();
                     break;
                 }
 

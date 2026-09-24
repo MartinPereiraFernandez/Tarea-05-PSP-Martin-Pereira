@@ -22,7 +22,19 @@ public class Interfaz{
             int codigoSalida;
             if (nivel==3){
                 codigoSalida = lanzador.factorAFichero(entrada);
-            }else {
+            }else if (nivel == 4){
+                codigoSalida = lanzador.factor(entrada);
+                try {
+                    int numero = Integer.parseInt(entrada);
+                    if (lanzador.esPrimo(numero)){
+                        System.out.println("¡El número "+numero+" es primo!.");
+                    } else {
+                        System.out.println("¡El número "+numero+" no es primo!.");
+                    }
+                } catch (NumberFormatException e){
+                    System.out.println("No es un numero");
+                }
+            } else {
                 codigoSalida = lanzador.factor(entrada);  //Usa el lanzador para obtener el codigo de salida, este dependera si se usa el try o el catch.
             }
             System.out.println("Operación cpmpletada. Codigo de salida: "+codigoSalida);
